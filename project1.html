@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      font-family: fantasy;
+      font-weight: 100;
+      margin: 0;
+      color: #2c5d63;
+    }
+    h2 {
+      text-align: center;
+      font-style: italic;
+      color: #c37857;
+      margin-block-start: 0.63em;
+      margin-block-end: 0.63em;
+    }
+    body {
+      background: linear-gradient(#a8dadd, #e7cfe6);
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    p {
+      text-align: justify;
+    }
+    ul {
+      list-style-type: circle;
+    }
+    button {
+      display: block;
+      margin: 15px auto;
+      border: 2px solid #076666;
+      background: #f4f6f7;
+      color: #076666;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 16px 24px;
+      border-radius: 30px;
+      transition: all 200ms ease;
+      box-shadow: rgba(137, 180, 180, 0.08) 0px 8px 8px 0;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #add9dd;
+      color: #c37857;
+      border: 2px solid #48d7f0;
+    }
+    .quote {
+      text-align: center;
+      color: #2c5d63;
+    }
+    .coder {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Music is life</h1>
+    <h2>The importance of listening to music ♪♪♪</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/246/original/imgproject1.jpg?1675192142"
+      alt="music"
+      width="300"
+    />
+    <p>
+      Music is one of the most enjoyable human experiences and an ever-present
+      companion to people’s everyday lives. It can improve mood, decrease pain
+      and anxiety, and facilitate opportunities for emotional expression.
+      Research suggests that music can benefit our physical and mental health in
+      numerous ways. Music therapy is used by therapist to enhance conventional
+      treatment for a variety of illnesses and disease processes from anxiety,
+      depression and stress, to the management of pain and enhancement of
+      functioning after degenerative neurologic disorders. Moreover, research
+      shows that there are few things that stimulate the brain the way music
+      does. So if you want to keep your brain engaged throughout the aging
+      process, listening to or playing music is a great tool. It provides a
+      total brain workout.
+      <a
+        href="https://www.northshore.org/healthy-you/9-health-benefits-of-music/"
+        target="_blank"
+        >Learn more here</a
+      >
+    </p>
+    <ul>
+      <li>
+        <div><u>Good music for brain</u>:<span>Classical music</span></div>
+      </li>
+      <li>
+        <div>
+          <u> Good music to reduce anxiety</u>:
+          <span>Classical music, Binaural beats and sound healing</span>
+        </div>
+      </li>
+      <li>
+        <div>
+          <u>Good music to reduce stress</u>:
+          <span>Instrumental music</span>
+        </div>
+      </li>
+      <li>
+        <div>
+          <u> Good music to support relaxation</u>:
+          <span>Classical, soft pop and world music</span>
+        </div>
+      </li>
+    </ul>
+    <strong>
+      <div class="quote">
+        <em
+          >“If you want to firm up your body, head to the gym. If you want to
+          exercise your brain, listen to music.”</em
+        >
+      </div>
+    </strong>
+    <br />
+    <button>Click me</button>
+    <hr />
+    <div class="coder">
+      <em>This page was built by Nadia Simbi and it is open sourced.</em>
+    </div>
+    <script>
+      function improveMood() {
+        let name = prompt("What is your name?");
+        let mood = prompt("Do you listen to music when you are sad?");
+        mood = mood.toLowerCase();
+        if (mood === "yes") {
+          alert(name + "! Good choice, keep up👍");
+        } else if (mood === "") {
+          alert("Try to answer these questions to get an advice 😉");
+        } else {
+          alert(name + "! Try to listen to music next time ♪♪♪");
+        }
+      }
+      let moodButton = document.querySelector("button");
+      moodButton.addEventListener("click", improveMood);
+    </script>
+  </body>
+</html>
